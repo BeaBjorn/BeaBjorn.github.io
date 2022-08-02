@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Moment 5, webbuveckling III</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Beatrice Björn - Webbutveckling III - DT173G - Moment 5</h1>
+    </header>
+
+    <main>
+        <!--Div that works as a header with titles for the courses listed below-->
+        <div>
+            <h2>Genomförda kurser</h2>
+            <ul class="listHead">
+                <li>Kurskod</li>
+                <li>Kursnamn</li>
+                <li>Progression</li>
+                <li>Kursplan</li>
+            </ul>
+            <ul id="courseList">
+                <!--The id is used in the js-file to print courses from the database here-->
+            </ul>
+        </div>
+        <div>
+            <h3>Lägg till ny kurs</h3>
+            <!--A form where ids are used to link the fomr to the database and store the data sent in the form if all fileds are filled-->
+            <form>
+                <label for="code">Kurskod :</label><br /><input id="code"><br />
+                <label for="name">Kursnamn :</label><br /><input id="name"><br />
+                <label for="progression">Progression :</label><br /><input id="progression"><br />
+                <label for="courseSyllabus">Kursplan :</label><br /><input id="courseSyllabus"><br />
+                <input class="btn" id="addBtn" type="submit" value="Lägg till kurs">
+            </form>
+        </div>
+
+    </main>
+
+    <!--Includes the js-file-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
